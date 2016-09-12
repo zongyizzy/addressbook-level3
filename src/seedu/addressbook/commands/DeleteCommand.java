@@ -39,4 +39,11 @@ public class DeleteCommand extends Command {
         }
     }
 
+    /**
+     * No mutation to the addressbook
+     */
+    @Override
+    public Boolean isMutating() {
+        return true;
+    }
 }

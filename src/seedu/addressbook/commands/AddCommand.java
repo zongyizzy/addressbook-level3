@@ -66,5 +66,12 @@ public class AddCommand extends Command {
             return new CommandResult(MESSAGE_DUPLICATE_PERSON);
         }
     }
+    /**
+     * Mutate addressbook
+     */
+	@Override
+	public Boolean isMutating() {
+		return true;
+	}
 
 }

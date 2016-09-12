@@ -53,4 +53,13 @@ public class FindCommand extends Command {
         return matchedPersons;
     }
 
+    /**
+     * No mutation to the addressbook
+     */
+	@Override
+	public Boolean isMutating() {
+		return false;
+	}
+
+    
 }

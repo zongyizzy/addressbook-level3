@@ -16,4 +16,11 @@ public class ExitCommand extends Command {
         return new CommandResult(MESSAGE_EXIT_ACKNOWEDGEMENT);
     }
 
+    /**
+     * No mutation to the addressbook
+     */
+    @Override
+    public Boolean isMutating() {
+        return false;
+    }
 }
