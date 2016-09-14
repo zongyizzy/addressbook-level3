@@ -45,8 +45,11 @@ Priority | As a ... | I want to ... | So that I can...
 `* * *` | user | add a new person |
 `* * *` | user | delete a person | remove entries that I no longer need
 `* * *` | user | find a person by name | locate details of persons without having to go through the entire list
+`* *` | user | set a passcode for my addressbook | I can keep my addressbook private
 `* *` | user | hide [private contact details](#private-contact-detail) by default | to minimize chance of someone else seeing them by accident
 `*` | user with many persons in the address book | sort persons by name | locate a person easily
+`*` | user | mark a contac as favorite | quickly access to favorite's contact
+
 
 
 ## Appendix B : Use Cases
@@ -73,6 +76,34 @@ Use case ends.
 
 > 3a1. AddressBook shows an error message <br>
   Use case resumes at step 2
+
+#### Use case: Rename tags
+
+**MSS**
+
+1. User request to rename tag
+2. Addressbook prompts to select the person, whose tag should be named
+3. User key in the person's name
+4. Addressbooks shows the name(s)
+5. User confirm the contact he wishes to edit
+6. Addressbook shows the tags 
+7. User show the tag to be renamed
+8. Addressbook renames the tag
+Use case ends.
+
+**Extensions**
+2a. The list is empty
+
+> Use case ends
+
+4a. The given name is invalid
+
+> 4a1. AddressBook shows an error message <br>
+  Use case resumes at step 3
+
+6a. The chosen contact has no tag
+
+> Use case ends  
 
 ## Appendix C : Non Functional Requirements
 
