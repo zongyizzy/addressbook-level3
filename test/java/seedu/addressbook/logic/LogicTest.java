@@ -29,7 +29,7 @@ public class LogicTest {
     @Rule
     public TemporaryFolder saveFolder = new TemporaryFolder();
 
-    private Storage saveFile;
+    private StorageFile saveFile;
     private AddressBook addressBook;
     private Logic logic;
 
